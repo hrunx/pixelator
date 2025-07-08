@@ -39,8 +39,9 @@ Turns any text prompt—or reference image—into crisp 16-bit sprites that look
 
 | Text prompt | Result |
 |-------------|--------|
-| `a Saudi man with a sword fighting a dragon` | ![dragon thumbnail](assets/dragon_thumb.png) |
-| `cyberpunk cat riding a hoverbike` | ![cybercat thumbnail](assets/cat_thumb.png) |
+| `a Saudi man with a sword fighting a dragon` | ![dragon thumbnail]![image](https://github.com/user-attachments/assets/3cbe98b6-0790-4910-ac5b-70c0c94a02cf)
+ |
+
 
 *(Run it locally or fork & deploy to Vercel/Netlify for a live link.)*
 
