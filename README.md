@@ -5,7 +5,7 @@
 *Retro pixel-art generator driven by Google Gemini*  
 Turns any text prompt—or reference image—into crisp 16-bit sprites that look straight out of a ’90s action-RPG.
 
-![Pixelator demo screenshot](<img width="632" alt="image" src="https://github.com/user-attachments/assets/6da58522-3f43-40f9-9ed5-e348a50f8459" />
+![Pixelator demo screenshot]![image](https://github.com/user-attachments/assets/6da58522-3f43-40f9-9ed5-e348a50f8459)
 )
 
 [![MIT license](https://img.shields.io/badge/license-MIT-ff69b4.svg)](LICENSE)&nbsp;
