@@ -1,0 +1,5 @@
+{
+  "name": "Pixel Art Generator",
+  "description": "Generate unique pixel art from your text prompts using Google's Imagen API. Type a description of what you want to create and watch it appear in a retro, pixelated style.",
+  "requestFramePermissions": []
+}

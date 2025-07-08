@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Art Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              pixel: ['"Press Start 2P"', 'cursive'],
+            },
+            colors: {
+              'pixel-bg': '#1a1a2e',
+              'pixel-border': '#9d79d6',
+              'pixel-text': '#e0e0e0',
+              'pixel-accent': '#fca311',
+              'pixel-primary': '#4a4e69',
+              'pixel-secondary': '#9a8c98',
+            },
+            boxShadow: {
+              'pixel-hard': '4px 4px 0px 0px rgba(0,0,0,0.75)',
+              'pixel-hard-hover': '6px 6px 0px 0px rgba(0,0,0,0.75)',
+              'pixel-inset': 'inset 2px 2px 0px 0px rgba(0,0,0,0.25)',
+            },
+          },
+        },
+        plugins: [
+            function({ addUtilities }) {
+                addUtilities({
+                    '.image-rendering-pixelated': {
+                        'image-rendering': 'pixelated',
+                    },
+                    '.image-rendering-crisp-edges': {
+                        'image-rendering': 'crisp-edges',
+                    }
+                })
+            }
+        ]
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.8.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-pixel-bg font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
